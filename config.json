@@ -1,0 +1,31 @@
+{
+    "siteName": "m4rek",
+    "siteDescription": "Test site",
+    "siteKeywords": ["blog", "m4rek"],
+
+    "siteIcon": "",
+    "siteImage": "",
+
+    "baseURL": "https://m4rek.dev",
+    "defaultTheme": "midnight",
+
+    "templateRefreshInterval": 5,
+    "postRefreshInterval": 300,
+
+    "dateFormat": "MM/dd/yyyy hh:mm tt",
+
+    "rss": {
+        "title": "{{ siteName }}",
+        "description": "{{ siteDescription }}",
+        "generator": "Bun Blog {{ version }}",
+        "feed_url": "{{ baseURL }}/rss.xml",
+        "site_url": "{{ baseURL }}",
+        "copyright": "Copyright 2023 {{ siteName }}",
+        "ttl": 60
+    },
+
+    "server": {
+        "host": "0.0.0.0",
+        "port": 3000
+    }
+}
